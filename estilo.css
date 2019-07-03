@@ -1,0 +1,761 @@
+/* E-mail marketing Sam's Clube */
+
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+/*  small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*  Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/*  Outlook */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+/* Web kit fixo */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+/* "resizing images" no IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+/* Windows 10 e-mail */
+a {
+    text-decoration: none;
+}
+
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/* Impede que o Gmail exiba um botão de download em imagens grandes e não vinculadas. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/*Se o acima não funcionar, adiciona uma classe .g-img a qualquer imagem em questão. */
+img.g-img + div {
+    display: none !important;
+}
+
+/*Cria  consulta de mídia para cada tamanho de viewport adicional que você precisar corrigir */
+
+/* iPhone 4, 4S, 5, 5S, 5C, e 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, e X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 500px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 500px !important;
+    }
+}
+    
+  /* CSS Reset : FIM */
+
+    <style>
+	    .primary{
+	background: #448ef6;
+}
+.bg_white{
+	background: #ffffff;
+
+}
+
+.email-section{
+	padding:20px;
+
+}
+/*BUTTON*/
+.btn{
+	padding: 5px 15px;
+	display: inline-block;
+}
+.btn.btn-primary{
+	border-radius: 30px;
+	background: #448ef6;
+	color: #ffffff;
+}
+.btn.btn-white{
+	border-radius: 30px;
+	background: #ffffff;
+	color: #000000;
+}
+.btn.btn-white-outline{
+	border-radius: 30px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+h1,h2,h4,h5,h6{
+	font-family: 'Open sans', sans-serif;
+	color: #000000;
+	margin-top: 0;
+	font-weight: 400;
+}
+body{
+	font-family: 'Open sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.4);
+}
+a{
+	color: #448ef6;
+}
+
+table{
+}
+
+
+/*LOGO TOP*/
+.logo {
+	margin: 0;
+	width: 100px;
+	height: 100px;	
+}
+
+.logo img{
+	max-width: 100%;
+
+}
+.logo h3{
+	margin-top: 30px;
+	color: #22449b;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.logo p{
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 16px; 
+}
+
+
+
+/*HERO*/
+
+.hero{
+	position: relative;
+	z-index: 0;
+	width: 70%;
+	background-repeat: no-repeat;
+	margin: 0 10px;
+	padding: 20px;
+	top: -10px;
+}
+
+.hero img{
+	max-width: 100%;
+
+}
+
+/*style="background-image: url(); background-repeat: no-repeat; height: 400px; width: 90%;*/
+.hero .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .3;
+}
+.hero .text{
+	color: rgba(255,255,255,.9);
+}
+.hero .text h2{
+	color: #fff;
+	font-size: 50px;
+	margin-bottom: 0;
+	font-weight: 300;
+	line-height: 1;
+}
+.hero .text h2 span{
+	font-weight: 600;
+	color: #448ef6;
+}
+
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+	color: #2983ea;
+	font-size: 20px;
+	margin-top: 0;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Open sans', sans-serif
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #448ef6;
+	margin: 0 auto;
+}
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	font-family: 
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+
+
+/*PRODUTOS*/
+
+.line{
+border-bottom: 1px solid grey;
+opacity: 0.3;
+width: 90%;
+margin: 10px 20px;	
+
+}
+
+
+.text-services .meta{
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.text-services{
+	padding: 0;
+}
+
+.text-services h3{
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #000;
+}
+
+.text-services-bg {
+	background-color: #a5784c;
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #fff;
+	padding: 20px 15px 0 5px;
+	width: 90%;
+	margin: 10px ;
+	box-sizing: border-box;
+	height: 100px;
+
+}
+
+.text-services-bg h3{
+	width: 100%;
+	margin: 10px;
+}
+
+
+.text-services-small h3{
+	margin-top: 150px;
+	font-size: 23px;
+	text-transform: uppercase;
+	color: black;
+	justify-content: 10px;
+	width: 90%;
+
+}
+.description{
+	width: 90%;
+	color: #000;
+	font-family: 'Open sans', sans-serif;
+	font-size: 13px;
+	margin: 5px;
+	position: relative;
+	top: -10px;
+}
+
+ .descriptionb{
+	text-transform: none;
+	color: white;
+	font-family: 'Open sans', sans-serif;
+	font-size: 13px;
+	margin: 16px 14px;
+	position: relative;
+	top: -10px;
+	width: 90%;
+}
+
+.description-small{
+	width: 100%;
+	color: #000;
+	font-family: 'Open sans', sans-serif;
+	font-size: 13px;
+	margin: 5px;
+	position: relative;
+	top: -10px;
+}
+
+/* PREÇO DOS PRODUTOS */
+
+.price{
+font-family: 'Open sans', sans-serif;
+color: #2983ea;
+font-size: 35px;
+font-weight: 700;
+position: relative;
+top: -40px;
+}
+
+
+
+.price-black{
+font-family: 'Open sans', sans-serif;
+color: #000;
+font-size: 35px;
+font-weight: 700;
+position: relative;
+top: -40px;
+margin: 40px 10px 0;
+
+}
+
+
+small{
+	font-size: 20px;
+}
+
+
+
+/*FOOTER*/
+
+.linha-cinza{
+	border-bottom: 1px solid #ccc;
+	opacity: 0.8;
+	width: 95%;
+	margin: -130px 20px 30px 150px;
+
+}
+
+.logo-footer img{
+
+	max-width: 100%;
+	margin: -100px 50px 20px 130px;
+		
+}
+
+.logo-footer{
+height: 300px;
+padding: 0 50px;
+margin: 20px 50px;
+}
+
+
+.logo-footer h5{
+	color: #033c7b;
+	font-family: 'Bree serif', serif;
+	text-align: center;
+	margin-left: 80px;
+	width: 200px;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+.cartao{
+background-color: rgba(229, 232, 232, 0.8);
+width: 600px;
+height: 50px;
+margin-left: 0;
+margin-top: -220px;
+}
+
+.cartao ul{
+	display: block;
+	margin: -10px 0 10px 350px;
+	padding: 0;
+}
+
+.cartao li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+.cartao li img{
+mix-blend-mode: multiply;
+
+}
+
+.cartao p{
+	display: inline-block;
+	margin: -48px 0 0 120px;
+	color: black;
+	font-weight: 600;
+}
+
+
+/*RODAPE*/
+
+.footer{
+
+	background-color: #fff;
+	margin-top: -100px;
+
+}
+
+.rodape{
+display: inline-block;
+width: 100%;
+}
+
+.menu-mail ul{
+	display: inline-block;
+	width: 100%;
+	float: left;
+}
+
+.menu-mail li{
+	list-style: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #033c7b;
+	margin: 5px;
+	overflow: auto;
+	float: left;
+	font-size: 12px;
+	font-weight: 700;
+
+}
+
+.menu-mail{
+	margin-top: -150px;
+	margin-left: 110px;
+	width: 2000px;
+}
+
+.atendimento{
+display: inline-block;
+width: 2000px;
+margin-left: 90px;
+margin-top: -120px;
+font-weight: 700;
+
+}
+
+.atendimento ul{
+	display: inline-block;
+
+}
+
+
+.atendimento li{
+	list-style: none;
+	display: inline-block;
+	color: #033c7b;
+	font-weight: 600;
+	font-size: 14px;
+
+}
+
+.icons{
+	margin-top: -90px;
+	margin-left: 140px;
+    display: inline-block;
+    width: 30000px;
+    float: left;
+   
+}
+
+.icons li{
+	list-style: none;
+	width: 10px;
+	height: 20px;
+	float: left;
+	display: inline-block;
+	margin: 20px;
+}
+
+.icons img{
+	display: inline-block;
+	float: left;
+}
+
+.icons ul{
+	display: inline-block;
+	float: left;
+	margin-left: 100px;
+	width: 2000px;
+}
+
+.linha p{
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	padding: 8px;
+	margin-left: 30px;
+}
+
+.linha{
+	border-top: 1px solid #ccc;
+	margin-top: -30px;
+	width: 500px;
+	margin-left: 50px;
+}
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 500px) {
+
+.cartao{
+background-color: rgba(229, 232, 232, 0.8);
+width: 500px;
+height: 80px;
+margin-left: 0;
+margin-top: -230px;
+}
+
+.cartao ul{
+	display: block;
+	margin: 10px 0 0 150px;
+	padding: 5px;
+	width: 4000px;
+}
+
+.cartao li{
+	list-style: none;
+	display: inline-block;
+	width: 50px;
+	margin: 10px;
+	
+}
+
+.cartao li:first-child{
+	margin-top: -100px;
+	padding: 0;
+}
+
+.cartao li:nth-child(2n);{
+margin-top: 100px;
+padding-bottom: 0;
+
+
+}
+
+
+
+.cartao img{
+mix-blend-mode: multiply;
+
+
+}
+
+.cartao p{
+	display: inline-block;
+	margin: -78px 0 0 150px;
+	color: black;
+	font-weight: 600;
+}
+
+.linha-cinza{
+	border-bottom: 1px solid #ccc;
+	opacity: 0.8;
+	width: 100%;
+	margin: -140px 20px 30px 110px;
+
+}
+
+.logo-footer img{
+
+	max-width: 100%;
+	margin: -100px 50px 20px 130px;
+		
+}
+
+.logo-footer{
+height: 300px;
+padding: 0;
+margin: 10px 50px;
+}
+
+
+.logo-footer h5{
+	color: #033c7b;
+	font-family: 'Bree serif', serif;
+	text-align: center;
+	margin-left: 80px;
+	width: 200px;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+.footer{
+
+	background-color: #fff;
+	margin-top: -150px;
+
+}
+
+.rodape{
+display: inline-block;
+width: 100%;
+}
+
+.menu-mail ul{
+	display: inline-block;
+	width: 100%;
+	float: left;
+}
+
+.menu-mail li{
+	list-style: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #033c7b;
+	margin: 5px;
+	overflow: auto;
+	float: left;
+	font-size: 12px;
+	font-weight: 700;
+
+}
+
+.menu-mail{
+	margin-top: -140px;
+	margin-left: 50px;
+	width: 2000px;
+}
+
+.atendimento{
+display: inline-block;
+width: 2000px;
+margin-left: 30px;
+margin-top: -110px;
+font-weight: 700;
+
+}
+
+.atendimento ul{
+	display: inline-block;
+
+}
+
+
+.atendimento li{
+	list-style: none;
+	display: inline-block;
+	color: #033c7b;
+	font-weight: 600;
+	font-size: 14px;
+
+}
+
+.icons{
+	margin-top: -90px;
+	margin-left: 90px;
+    display: inline-block;
+    width: 30000px;
+    float: left;
+   
+}
+
+.icons li{
+	list-style: none;
+	width: 10px;
+	height: 20px;
+	float: left;
+	display: inline-block;
+	margin: 20px;
+}
+
+.icons img{
+	display: inline-block;
+	float: left;
+}
+
+.icons ul{
+	display: inline-block;
+	float: left;
+	margin-left: 100px;
+	width: 2000px;
+}
+
+.linha p{
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	padding: 8px;
+	margin-left: -30px;
+}
+
+.linha{
+	border-top: 1px solid #ccc;
+	margin-top: -30px;
+	width: 500px;
+	margin-left: 0;
+}
+
+}
+
+/* FIM RESPONSIVO */
